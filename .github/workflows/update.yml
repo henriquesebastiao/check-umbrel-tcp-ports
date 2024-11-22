@@ -52,7 +52,7 @@ jobs:
           pip install poetry
           poetry config virtualenvs.create false
           poetry install
-          poetry run python utils/gen.py
+          poetry run python cutp/utils/gen.py
           poetry run task format
 
       - name: Configure Git
